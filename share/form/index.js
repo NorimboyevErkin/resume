@@ -88,6 +88,7 @@ function MyForm() {
             position: "fixed",
             top: "6rem",
             right: "3rem",
+            zIndex: "19",
           }}
         >
           Muvafaqiyatli jo'natildi !
@@ -101,6 +102,7 @@ function MyForm() {
             position: "fixed",
             top: "6rem",
             right: "3rem",
+            zIndex: "19",
           }}
         >
           Muvafaqiyatsiz jo'natildi !
