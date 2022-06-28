@@ -25,7 +25,7 @@ function ShowCase({...others}) {
               data-aos-duration="1500"
             >
               <p>Welcome to my world !</p>
-              <h1>Hello I'm Erkin</h1>
+              <h1>Hello I&apos;m Erkin</h1>
               <VerticalSlider>
                 <h1>Wep developer</h1>
                 <h1>UX , UI designer</h1>
