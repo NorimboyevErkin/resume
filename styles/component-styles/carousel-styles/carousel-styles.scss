@@ -1,0 +1,16 @@
+.slick-slider {
+  .slick-dots {
+    button {
+      &:before {
+        color: var(--text-color);
+      }
+    }
+    .slick-active {
+      button {
+        &:before {
+          color: var(--blue-color);
+        }
+      }
+    }
+  }
+}

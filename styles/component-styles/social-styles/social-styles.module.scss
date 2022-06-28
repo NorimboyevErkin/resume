@@ -1,0 +1,56 @@
+.SocialBox {
+  .socialShare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    .circleSocial {
+      margin: 6px;
+
+      a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(198, 201, 216, 0.75);
+        line-height: 35px;
+        color: rgba(198, 201, 216, 0.75);
+        border-radius: 100%;
+        font-size: 1.2rem;
+        transition: transform 0.5s ease-in-out;
+      }
+      &:hover {
+        a {
+          background: var(--blue-color);
+          border-color: var(--blue-color);
+          color: var(--white);
+          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    .iconSocial {
+      margin: 6px;
+      a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 35px;
+        color: rgba(198, 201, 216, 0.75);
+        border-radius: 100%;
+        font-size: 1.2rem;
+        transition: transform 0.5s ease-in-out;
+      }
+      &:hover {
+        a {
+          opacity: 0.9;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}

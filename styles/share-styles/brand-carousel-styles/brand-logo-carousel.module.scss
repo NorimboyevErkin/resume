@@ -1,0 +1,15 @@
+.BrandLogoBox {
+  padding: 1rem;
+  user-select: none;
+  background: var(--body-color);
+  .BrandLogoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    img {
+      margin: 0 auto;
+      vertical-align: middle;
+    }
+  }
+}

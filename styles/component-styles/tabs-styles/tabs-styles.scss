@@ -1,0 +1,22 @@
+.tabsBox {
+  // border: 1px solid rgba(212, 212, 212, 0.1);
+  color: var(--text-color);
+  padding:1rem;
+  .MuiBox-root {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .MuiTabs-root {
+    .MuiTabs-scroller {
+      .MuiTabs-flexContainer {
+        .MuiButtonBase-root {
+          color: var(--text-color);
+        }
+      }
+      .MuiTabs-indicator {
+        background: var(--blue-color);
+      }
+    }
+  }
+}

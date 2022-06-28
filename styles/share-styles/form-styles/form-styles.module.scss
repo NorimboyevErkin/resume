@@ -1,0 +1,32 @@
+.ContactBox {
+  width: 100%;
+  padding: 1rem;
+  @media (max-width: 450px) {
+    padding: 1rem 0;
+  }
+  .ContactFormBox {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    row-gap: .5rem;
+    .ContactInput {
+      background: rgb(47, 47, 55);
+      label {
+        color: var(--text-color);
+      }
+      input {
+        color: var(--text-color);
+      }
+      textarea {
+        color: var(--text-color);
+        min-height: 70px !important;
+      }
+    }
+    .ContactFormErrorText{
+      color: red;
+      font-size: .9rem;
+      margin: 0;
+    }
+  }
+}

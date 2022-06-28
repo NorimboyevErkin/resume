@@ -1,0 +1,93 @@
+.DropShadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.DropNavBox {
+  @media (min-width: 800px) {
+    display: none;
+  }
+  .BurgerBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .Burger {
+      all: unset;
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--text-color);
+    }
+  }
+
+  .DropMenuNav {
+    z-index: 10;
+    background: var(--body-color);
+    position: fixed;
+    width: 60%;
+    @media (max-width: 600px) {
+     width: 70%;
+    }
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    overflow-y: auto;
+    transition: right 0.5s ease-in-out;
+
+    .DropMenu {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 0 30px 30px 30px;
+      @media (max-width: 600px) {
+        padding: 0 15px 15px 15px;
+      }
+      li {
+        margin: 0 15px;
+        position: relative;
+        a {
+          color: var(--text-color);
+          font-size: 16px;
+          font-weight: 500;
+          padding: 20px 0;
+          display: inline-block;
+          transition: color 0.3s;
+        }
+        &::after {
+          content: "";
+          background: var(--blue-color);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+        }
+        &:hover {
+          a {
+            color: var(--blue-color);
+          }
+          &::after {
+            animation: toRight 0.2s 0.1s alternate both;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes toRight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}

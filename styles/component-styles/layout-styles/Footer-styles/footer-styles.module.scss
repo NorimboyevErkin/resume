@@ -1,0 +1,33 @@
+.FooterBox {
+  background: var(--body-color);
+  overflow: hidden;
+  .FooterFlex {
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .FooterFlexItems {
+      width: calc(100% / 3);
+      align-self: center;
+      .FooterBy {
+        margin: 0;
+        color: var(--text-color);
+        text-align: end;
+      }
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+      row-gap: 1rem;
+      .FooterFlexItems {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .FooterBy {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

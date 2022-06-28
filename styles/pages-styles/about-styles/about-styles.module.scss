@@ -1,0 +1,38 @@
+.AboutBox {
+  padding: 1rem 2rem;
+  overflow: hidden;
+  @media (max-width: 450px) {
+    padding: 1rem;
+  }
+  margin-bottom: 3rem;
+  li {
+    line-height: 1.5rem;
+  }
+  a {
+    color: var(--blue-color);
+    text-decoration: underline;
+  }
+  .AboutGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+    column-gap: 3rem;
+    .AboutImg {
+      object-fit: contain;
+      border-radius: 50%;
+      background: var(--white);
+      flex: 1;
+    }
+    .AboutText {
+      padding: 1rem;
+      overflow: hidden;
+      color: var(--text-color);
+      line-height: 25px;
+      flex: 3;
+    }
+  }
+}

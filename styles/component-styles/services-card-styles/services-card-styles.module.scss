@@ -1,0 +1,35 @@
+.ServicesCardBox {
+  max-width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  background: var(--heading-color);
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    animation: changeBG 0.5s both;
+    transform: translateY(-10px);
+  }
+
+  .ServicesCardDescriptiop {
+    text-align: center;
+  }
+  .ServicesCardTitle {
+    text-align: center;
+  }
+  .ServicesCardIcon {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--blue-color);
+  }
+}
+
+@keyframes changeBG {
+  from {
+    opacity: 0.9;
+    background: var(--heading-color);
+  }
+  to {
+    opacity: 1;
+    background: linear-gradient(to right, rgb(1, 198, 247), rgb(15, 147, 255));
+  }
+}

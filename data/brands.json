@@ -1,0 +1,30 @@
+[
+  {
+    "image": "https://mui.com/static/branding/companies/spotify-dark.svg",
+    "name": "spotify"
+  },
+  {
+    "image": "https://mui.com/static/branding/companies/amazon-dark.svg",
+    "name": "amazon"
+  },
+  {
+    "image": "https://mui.com/static/branding/companies/nasa-dark.svg",
+    "name": "nasa"
+  },
+  {
+    "image": "https://mui.com/static/branding/companies/netflix-dark.svg",
+    "name": "netflix"
+  },
+  {
+    "image": "https://mui.com/static/branding/companies/spotify-dark.svg",
+    "name": "spotify"
+  },
+  {
+    "image": "https://mui.com/static/branding/companies/unity-dark.svg",
+    "name": "unity"
+  },
+  {
+    "image": "https://mui.com/static/branding/companies/shutterstock-dark.svg",
+    "name": "shutterstock"
+  }
+]

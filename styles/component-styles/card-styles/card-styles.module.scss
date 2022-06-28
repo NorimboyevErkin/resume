@@ -1,0 +1,38 @@
+@import "./card-image-styles/card-image-styles.scss";
+@import "./card-title-styles/card-title-styles.scss";
+
+.CardBox {
+  max-width: 100%;
+  position: relative;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12),
+    0 20px 20px -10px rgba(0, 0, 0, 0.125);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.04);
+    .CardTitleDescription {
+      transform: scale(0.92);
+      transform: translateY(-12px);
+    }
+
+    .CardTitleTitle {
+      transform: scale(0.92);
+      transform: translateY(-10px);
+    }
+    .CardTitleBottomBorder {
+      border-radius: 6px;
+      transform: translateY(-14px) scale(0.9);
+    }
+    .CardImageBox {
+      transform: translateY(4px) scale(0.92);
+      border-radius: 6px;
+
+      &::before {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

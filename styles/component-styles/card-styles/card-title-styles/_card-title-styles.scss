@@ -1,0 +1,27 @@
+.CardTitleBox {
+  color: var(--text-color);
+  position: relative;
+  padding: 20px 20px 30px;
+  .CardTitleDescription {
+    margin: 0;
+    font-size: 0.9em;
+    color: #999999;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.04s;
+  }
+  .CardTitleTitle {
+    margin: 0 0 4px 0;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+  }
+  .CardTitleBottomBorder {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 0 0 8px 8px;
+    transition: all 0.5s ease-in-out;
+  }
+}
