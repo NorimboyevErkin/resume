@@ -1,7 +1,7 @@
 import React, { useRef, useState, useContext } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { SectionContext } from "../../../context";
-import styles from "../../../styles/component-styles/layout-styles/dropNav-styles/dropNav-styles.module.scss";
+import styles from "../../../styles/component-styles/layout-styles/DropNav-styles/dropNav-styles.module.scss";
 import NavbarItems from "../Navbar";
 
 function DropNav() {

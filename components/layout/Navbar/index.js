@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { SectionContext } from "../../../context";
 import Scrollspy from "react-scrollspy";
-import styles from "../../../styles/component-styles/layout-styles/navbar-styles/navbar-styles.module.scss";
+import styles from "../../../styles/component-styles/layout-styles/Navbar-styles/navbar-styles.module.scss";
 function NavbarItems() {
   const { sectionRefs } = useContext(SectionContext);
 

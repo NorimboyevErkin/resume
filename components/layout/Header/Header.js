@@ -1,7 +1,7 @@
 import Social from "../../social";
 import React, { useState } from "react";
 import Logo from "../../logo";
-import styles from "../../../styles/component-styles/layout-styles/header-styles/header-styles.module.scss";
+import styles from "../../../styles/component-styles/layout-styles/Header-styles/header-styles.module.scss";
 import { SocialShare } from "../../../data";
 import DropNav from "../DropNav";
 import NavbarItems from "../Navbar";
