@@ -11,7 +11,7 @@ function Services({ ...others }) {
   }, []);
   return (
     <div
-      className={styles.ServicesBox}
+      className={styles.ServicesBox + " " + "scrollIntoViewMinusNavHeight"}
       ref={servicesSection}
       id="services"
       {...others}

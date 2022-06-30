@@ -16,7 +16,12 @@ function About({ ...others }) {
   }, []);
 
   return (
-    <div className={styles.AboutBox} ref={about} id="about" {...others}>
+    <div
+      className={styles.AboutBox + " " + "scrollIntoViewMinusNavHeight"}
+      ref={about}
+      id="about"
+      {...others}
+    >
       <div className="container">
         <h2 className="title">About me</h2>
         <div className={styles.AboutGrid}>

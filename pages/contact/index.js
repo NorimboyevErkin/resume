@@ -12,15 +12,15 @@ function Contact({ ...others }) {
   }, []);
   return (
     <div
-      className={styles.ContactBox}
+      className={styles.ContactBox + " " + "scrollIntoViewMinusNavHeight"}
       ref={contactSection}
-      id='contact'
+      id="contact"
       {...others}
     >
       <div className="container">
         <h2 className="title">Contact</h2>
         <div className={styles.ContactGrid}>
-          <Components typeComponent='map'/>
+          <Components typeComponent="map" />
           <MyForm />
         </div>
       </div>

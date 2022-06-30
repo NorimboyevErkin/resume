@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { SectionContext } from "../../../context";
 import Scrollspy from "react-scrollspy";
 import styles from "../../../styles/component-styles/layout-styles/Navbar-styles/navbar-styles.module.scss";
-function NavbarItems() {
+function NavbarItems({...others}) {
   const { sectionRefs } = useContext(SectionContext);
 
   const scrollSection = (section) => {
@@ -16,10 +16,11 @@ function NavbarItems() {
       style={{
         fontWeight: 300,
       }}
-      offset={-61}
+      offset={-100}
       onUpdate={(el) => {
         console.log(el);
       }}
+      {...others}
     >
       <li
         className={styles.activeNav}

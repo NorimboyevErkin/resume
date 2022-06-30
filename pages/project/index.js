@@ -13,7 +13,7 @@ function Project({ ...others }) {
 
   return (
     <div
-      className={styles.ProjectBox}
+      className={styles.ProjectBox + " " + "scrollIntoViewMinusNavHeight"}
       ref={projectSection}
       id="project"
       {...others}

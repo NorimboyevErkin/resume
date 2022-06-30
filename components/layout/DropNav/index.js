@@ -1,12 +1,9 @@
-import React, { useRef, useState, useContext } from "react";
+import React, { useRef, useState} from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { SectionContext } from "../../../context";
 import styles from "../../../styles/component-styles/layout-styles/DropNav-styles/dropNav-styles.module.scss";
 import NavbarItems from "../Navbar";
 
 function DropNav() {
-  const { sectionRefs } = useContext(SectionContext);
-  const [open, setopen] = useState(false);
   const navRef = useRef();
   const shadowRef = useRef();
 
@@ -17,13 +14,6 @@ function DropNav() {
   const closeNav = () => {
     navRef.current.style.right = "-100%";
     shadowRef.current.style.display = "none";
-  };
-
-  const scrollSection = (section) => {
-    if (typeof document !== "undefined") {
-      section?.scrollIntoView({ behavior: "smooth" });
-      closeNav();
-    }
   };
 
   return (
