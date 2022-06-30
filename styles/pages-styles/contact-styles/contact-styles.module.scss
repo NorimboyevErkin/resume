@@ -1,6 +1,7 @@
 .ContactBox {
   padding: 1rem 2rem;
   margin-bottom: 3rem;
+  overflow: hidden;
   @media (max-width: 450px) {
     padding: 1rem;
   }

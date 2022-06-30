@@ -1,6 +1,7 @@
 .ServicesBox {
   padding: 1rem 2rem;
   background: var(--body-color);
+  overflow: hidden;
   @media (max-width: 450px) {
     padding: 1rem;
   }

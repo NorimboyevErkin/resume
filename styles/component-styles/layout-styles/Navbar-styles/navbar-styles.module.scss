@@ -18,7 +18,7 @@
       font-weight: 500;
       padding: 20px 0;
       display: inline-block;
-      transition: color 0.3s, transform 0.5s ease-in-out;
+      transition: color 0.3s, opacity 0.3s ease-in-out;
       cursor: pointer;
     }
     &::after {
@@ -32,8 +32,7 @@
     }
     &:hover {
       a {
-        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-        transform: translateY(-5px);
+        opacity: .6;
       }
     }
   }

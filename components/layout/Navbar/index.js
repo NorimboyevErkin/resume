@@ -2,10 +2,11 @@ import React, { useContext, useState } from "react";
 import { SectionContext } from "../../../context";
 import Scrollspy from "react-scrollspy";
 import styles from "../../../styles/component-styles/layout-styles/Navbar-styles/navbar-styles.module.scss";
-function NavbarItems({...others}) {
+function NavbarItems({ onFinish, ...others }) {
   const { sectionRefs } = useContext(SectionContext);
 
   const scrollSection = (section) => {
+    onFinish();
     section?.scrollIntoView({ behavior: "smooth" });
   };
   return (

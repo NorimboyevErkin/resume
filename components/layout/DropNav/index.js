@@ -1,4 +1,4 @@
-import React, { useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import styles from "../../../styles/component-styles/layout-styles/DropNav-styles/dropNav-styles.module.scss";
 import NavbarItems from "../Navbar";
@@ -35,7 +35,7 @@ function DropNav() {
               <HiOutlineX />
             </button>
           </div>
-          <NavbarItems />
+          <NavbarItems onFinish={closeNav} />
         </nav>
       </div>
     </>

@@ -5,13 +5,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Components from "../../components";
 
-function ShowCase({...others}) {
-    const { sectionRefs } = useContext(SectionContext);
-    const homeSection = useRef();
-    useEffect(() => {
-      sectionRefs.home = homeSection.current;
-       AOS.init({});
-    }, []);
+function ShowCase({ ...others }) {
+  const { sectionRefs } = useContext(SectionContext);
+  const homeSection = useRef();
+  useEffect(() => {
+    sectionRefs.home = homeSection.current;
+    AOS.init({});
+  }, []);
   return (
     <>
       <div
@@ -20,7 +20,7 @@ function ShowCase({...others}) {
         id="home"
         {...others}
       >
-        <div style={{ position: "relative", width: "100%" }}>
+        <div className={styles.showCaseConntainer}>
           <div className="container">
             <Components typeComponent="rain-animation" />
             <div
@@ -30,7 +30,7 @@ function ShowCase({...others}) {
             >
               <p>Welcome to my world !</p>
               <h1>Hello I&apos;m Erkin</h1>
-              <Components typeComponent='vertical-slider'>
+              <Components typeComponent="vertical-slider">
                 <h1>Wep developer</h1>
                 <h1>UX , UI designer</h1>
               </Components>
