@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
-import Card from "../../components/card";
+import Components from "../../components";
 import { SectionContext } from "../../context";
 import project from "../../data/project.json";
 import styles from "../../styles/pages-styles/project-styles/project-styles.module.scss";
@@ -13,18 +13,16 @@ function Project({ ...others }) {
 
   return (
     <div
-      className={styles.ProjectBox + " " + "scrollIntoViewMinusNavHeight"}
+      className={styles.ProjectBox}
       ref={projectSection}
+      id="project"
       {...others}
     >
       <div className="container">
         <h2 className="title">My projects</h2>
         <div className={styles.ProjectGrid}>
           {project.map((item, index) => (
-            <Card
-              data={item}
-              key={index}
-            />
+            <Components typeComponent="card" data={item} key={index} />
           ))}
         </div>
       </div>

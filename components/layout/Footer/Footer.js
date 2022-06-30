@@ -1,7 +1,7 @@
 import { SocialShare } from "../../../data/index";
-import Social from "../../social/Social";
-import styles from "../../../styles/component-styles/layout-styles/Footer-styles/footer-styles.module.scss";
-import Logo from "../../logo/Logo";
+import Social from "../../social";
+import styles from "../../../styles/component-styles/layout-styles/footer-styles/footer-styles.module.scss";
+import Logo from "../../logo";
 
 function Footer() {
   return (

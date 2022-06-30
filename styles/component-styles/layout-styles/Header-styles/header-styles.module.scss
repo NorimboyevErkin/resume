@@ -22,6 +22,11 @@
   }
   .HeaderLeftBox {
     @include flexCenter();
+    .HeaderNavbarBox {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
   }
 }
 .stickyNav {

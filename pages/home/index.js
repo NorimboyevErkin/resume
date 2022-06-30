@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useRef } from "react";
 import styles from "../../styles/pages-styles/home-styles/home-styles.module.scss";
-import RainAnimation from "../../components/rain-animation";
-import VerticalSlider from "../../components/vertical-slider";
 import { SectionContext } from "../../context";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Components from "../../components";
 
 function ShowCase({...others}) {
     const { sectionRefs } = useContext(SectionContext);
@@ -15,10 +14,15 @@ function ShowCase({...others}) {
     }, []);
   return (
     <>
-      <div className={styles.showCaseBox} ref={homeSection} {...others}>
+      <div
+        className={styles.showCaseBox}
+        ref={homeSection}
+        id="home"
+        {...others}
+      >
         <div style={{ position: "relative", width: "100%" }}>
           <div className="container">
-            <RainAnimation />
+            <Components typeComponent="rain-animation" />
             <div
               className={styles.ShowCaseInfo}
               data-aos="fade-right"
@@ -26,10 +30,10 @@ function ShowCase({...others}) {
             >
               <p>Welcome to my world !</p>
               <h1>Hello I&apos;m Erkin</h1>
-              <VerticalSlider>
+              <Components typeComponent='vertical-slider'>
                 <h1>Wep developer</h1>
                 <h1>UX , UI designer</h1>
-              </VerticalSlider>
+              </Components>
               <h1>From Uzbekistan</h1>
             </div>
           </div>

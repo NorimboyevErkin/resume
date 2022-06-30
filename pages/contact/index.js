@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef } from "react";
-import MyMap from "../../components/map";
 import MyForm from "../../share/form";
 import { SectionContext } from "../../context";
 import styles from "../../styles/pages-styles/contact-styles/contact-styles.module.scss";
+import Components from "../../components";
 
 function Contact({ ...others }) {
   const { sectionRefs } = useContext(SectionContext);
@@ -12,14 +12,15 @@ function Contact({ ...others }) {
   }, []);
   return (
     <div
-      className={styles.ContactBox + " " + "scrollIntoViewMinusNavHeight"}
+      className={styles.ContactBox}
       ref={contactSection}
+      id='contact'
       {...others}
     >
       <div className="container">
         <h2 className="title">Contact</h2>
         <div className={styles.ContactGrid}>
-          <MyMap />
+          <Components typeComponent='map'/>
           <MyForm />
         </div>
       </div>

@@ -2,10 +2,10 @@ import { useRef, useContext, useEffect } from "react";
 import Image from "next/image";
 import man from "../../public/img/man1.png";
 import styles from "../../styles/pages-styles/about-styles/about-styles.module.scss";
-import TabPanel from "../../components/tabs/index";
 import { SectionContext } from "../../context";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Components from "../../components";
 function About({ ...others }) {
   const about = useRef();
   const { sectionRefs } = useContext(SectionContext);
@@ -16,11 +16,7 @@ function About({ ...others }) {
   }, []);
 
   return (
-    <div
-      className={styles.AboutBox + " " + "scrollIntoViewMinusNavHeight"}
-      ref={about}
-      {...others}
-    >
+    <div className={styles.AboutBox} ref={about} id="about" {...others}>
       <div className="container">
         <h2 className="title">About me</h2>
         <div className={styles.AboutGrid}>
@@ -43,7 +39,7 @@ function About({ ...others }) {
             </p>
           </div>
         </div>
-        <TabPanel>
+        <Components typeComponent="tabs-panel">
           <div label="SKILLS" data-aos="fade-left" data-aos-duration="1000">
             <h3>My SKILLS</h3>
             <ol>
@@ -70,7 +66,7 @@ function About({ ...others }) {
               </li>
             </ol>
           </div>
-        </TabPanel>
+        </Components>
       </div>
     </div>
   );

@@ -5,16 +5,24 @@
   border-radius: 15px;
   background: var(--heading-color);
   transition: transform 0.5s ease-in-out;
+  cursor: pointer;
   &:hover {
     animation: changeBG 0.5s both;
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
+    .ServicesCardDescriptiop {
+      color:var(--white);
+    }
   }
 
   .ServicesCardDescriptiop {
     text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-color);
   }
   .ServicesCardTitle {
     text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
   }
   .ServicesCardIcon {
     text-align: center;

@@ -1,7 +1,8 @@
 import React, { useRef, useState, useContext } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { SectionContext } from "../../../context";
-import styles from "../../../styles/component-styles/layout-styles/DropNav-styles/dropNav-styles.module.scss";
+import styles from "../../../styles/component-styles/layout-styles/dropNav-styles/dropNav-styles.module.scss";
+import NavbarItems from "../Navbar";
 
 function DropNav() {
   const { sectionRefs } = useContext(SectionContext);
@@ -44,43 +45,7 @@ function DropNav() {
               <HiOutlineX />
             </button>
           </div>
-          <ul className={styles.DropMenu}>
-            <li
-              onClick={() => {
-                scrollSection(sectionRefs?.home);
-              }}
-            >
-              <a>Home</a>
-            </li>
-            <li
-              onClick={() => {
-                scrollSection(sectionRefs?.about);
-              }}
-            >
-              <a>About</a>
-            </li>
-            <li
-              onClick={() => {
-                scrollSection(sectionRefs?.services);
-              }}
-            >
-              <a>Service</a>
-            </li>
-            <li
-              onClick={() => {
-                scrollSection(sectionRefs?.project);
-              }}
-            >
-              <a>Portfolio</a>
-            </li>
-            <li
-              onClick={() => {
-                scrollSection(sectionRefs?.contact);
-              }}
-            >
-              <a> Contact</a>
-            </li>
-          </ul>
+          <NavbarItems />
         </nav>
       </div>
     </>

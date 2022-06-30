@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Fab from "@mui/material/Fab";
-import Link from "next/link";
 import { BiChevronUp } from "react-icons/bi";
 import styles from "../../styles/component-styles/up-button-styles/up-button-styles.module.scss";
+import { SectionContext } from "../../context";
 function UpButton() {
   const [upButton, setupButton] = useState(false);
+  const { sectionRefs } = useContext(SectionContext);
+  SectionContext
+  const scrollSection = (section) => {
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
   const func = () => {
     if (typeof window !== "undefined") {
       window.scrollY > 100 ? setupButton(true) : setupButton(false);
@@ -15,12 +20,13 @@ function UpButton() {
     <div
       className={styles.UpButtonBox}
       style={upButton ? null : { display: "none" }}
+      onClick={() => {
+        scrollSection(sectionRefs?.home);
+      }}
     >
-      <Link href="#">
-        <Fab color="primary" aria-label="add" className={styles.UpButtonfab}>
-          <BiChevronUp style={{ fontSize: "2rem" }} />
-        </Fab>
-      </Link>
+      <Fab color="primary" aria-label="add" className={styles.UpButtonfab}>
+        <BiChevronUp style={{ fontSize: "2rem" }} />
+      </Fab>
     </div>
   );
 }

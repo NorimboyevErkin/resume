@@ -1,10 +1,10 @@
-import Social from "../../social/Social";
+import Social from "../../social";
 import React, { useState } from "react";
-import Logo from "../../logo/Logo";
-import Navbar from "../Navbar/Navbar";
-import styles from "../../../styles/component-styles/layout-styles/Header-styles/header-styles.module.scss";
+import Logo from "../../logo";
+import styles from "../../../styles/component-styles/layout-styles/header-styles/header-styles.module.scss";
 import { SocialShare } from "../../../data";
 import DropNav from "../DropNav";
+import NavbarItems from "../Navbar";
 
 function Header() {
   const [bgNav, setbgNav] = useState(false);
@@ -24,7 +24,9 @@ function Header() {
         <div className={styles.HeaderContainer}>
           <div className={styles.HeaderLeftBox}>
             <Logo />
-            <Navbar />
+            <div className={styles.HeaderNavbarBox}>
+              <NavbarItems/>
+            </div>
           </div>
           <Social type="icon" SocialShare={SocialShare} />
           <DropNav />

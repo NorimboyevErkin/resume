@@ -1,49 +1,50 @@
-.MainMenuNav {
+.MainMenu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   @media (max-width: 800px) {
-    display: none;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
   }
-  .MainMenu {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    li {
-      margin: 0 15px;
-      position: relative;
+  @media (max-width: 600px) {
+    padding: 0 15px 15px 15px;
+  }
+  li {
+    margin: 0 15px;
+    position: relative;
+    a {
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: 500;
+      padding: 20px 0;
+      display: inline-block;
+      transition: color 0.3s, transform 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    &::after {
+      content: "";
+      background: var(--blue-color);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+    }
+    &:hover {
       a {
-        color: var(--text-color);
-        font-size: 16px;
-        font-weight: 500;
-        padding: 20px 0;
-        display: inline-block;
-        transition: color 0.3s;
-      }
-      &::after {
-        content: "";
-        background: var(--blue-color);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-      }
-      &:hover {
-        a {
-          color: var(--blue-color);
-        }
-        &::after {
-          animation: toRight 0.2s 0.1s alternate both;
-        }
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
       }
     }
   }
 }
 .activeNav {
-    a {
-      color: var(--blue-color) !important;
-    }
-    &::after {
-      animation: toRight 0.2s 0.1s alternate both;
-    }
+  a {
+    color: var(--blue-color) !important;
+  }
+  &::after {
+    animation: toRight 0.2s 0.1s alternate both;
+  }
 }
 
 @keyframes toRight {
