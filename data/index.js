@@ -56,7 +56,7 @@ const ServiceList = [
     icon: <FiMonitor />,
     title: "Mobile App Development",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth. erkin",
+      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
     icon: <FiCast />,
@@ -68,7 +68,7 @@ const ServiceList = [
     icon: <FiMonitor />,
     title: "Marketing & Reporting",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth. erkin",
+      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
 ];
 export { SocialShare, ServiceList };
