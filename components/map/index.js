@@ -15,7 +15,7 @@ function MyMap({
       loading="lazy"
       className={styles.mapBox}
       data-aos="fade-up"
-      data-aos-offset="100"
+      data-aos-offset="80"
     ></iframe>
   );
 }

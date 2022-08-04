@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import styles from "../../../styles/component-styles/layout-styles/DropNav-styles/dropNav-styles.module.scss";
 import NavbarItems from "../Navbar";

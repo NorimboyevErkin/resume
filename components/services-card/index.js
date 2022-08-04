@@ -10,7 +10,7 @@ function ServicesCard({ icon, title, descriptiop }) {
     <div
       className={styles.ServicesCardBox}
       data-aos="fade-up"
-      data-aos-offset="100"
+      data-aos-offset="80"
     >
       <div className={styles.ServicesCardIcon}>{icon}</div>
       <div className={styles.ServicesCardTitle}>

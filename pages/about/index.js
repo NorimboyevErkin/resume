@@ -33,8 +33,13 @@ function About({ ...others }) {
             height={170}
             className={styles.AboutImg}
           />
-          <div className={styles.AboutText}>
-            <p className="text" data-aos="fade-left" data-aos-duration="1500">
+          <div
+            className={styles.AboutText}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+          >
+            <p className="text">
               Norimboyev Erkin Turg&apos;un og&apos;li Toshkent Viloyati
               Bo&apos;stonliq tumani Gazalkent shaxrida tavalud topgan. Mirzo
               Ulug&apos;bek nomidagi O&apos;zbekiston Milliy Unversiteti ,
@@ -45,7 +50,12 @@ function About({ ...others }) {
           </div>
         </div>
         <Components typeComponent="tabs-panel">
-          <div label="SKILLS" data-aos="fade-left" data-aos-duration="1000">
+          <div
+            label="SKILLS"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+          >
             <h3>My SKILLS</h3>
             <ol>
               <li>HTML</li>
@@ -59,7 +69,12 @@ function About({ ...others }) {
               <li>Git , GitHub , GitLub</li>
             </ol>
           </div>
-          <div label="EDUCATION" data-aos="fade-left" data-aos-duration="1000">
+          <div
+            label="EDUCATION"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+          >
             <h3>My EDUCATION</h3>
             <ol>
               <li>

@@ -18,9 +18,9 @@ function NavbarItems({ onFinish = null, ...others }) {
         fontWeight: 300,
       }}
       offset={-100}
-      onUpdate={(el) => {
-        console.log(el);
-      }}
+      // onUpdate={(el) => {
+      //   console.log(el,"el");
+      // }}
       {...others}
     >
       <li

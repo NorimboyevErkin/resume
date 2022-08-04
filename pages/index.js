@@ -10,10 +10,10 @@ function Home() {
     <>
       <ShowCase />
       <About />
-      <Services/>
+      <Services />
       <Project />
       <BrandLogoCarousel />
-      <Contact/>
+      <Contact />
     </>
   );
 }

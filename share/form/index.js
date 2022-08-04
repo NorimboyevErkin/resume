@@ -58,7 +58,6 @@ function MyForm() {
   }, []);
 
   const sendEmail = (data) => {
-    console.log(data,"data");
     setLoading(true);
     emailjs
       .sendForm(
@@ -111,7 +110,7 @@ function MyForm() {
       <div
         className={styles.ContactBox}
         data-aos="fade-up"
-        data-aos-offset="100"
+        data-aos-offset="80"
       >
         <div className="container">
           <form

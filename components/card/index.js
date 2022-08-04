@@ -10,7 +10,7 @@ function Card({ data }) {
     AOS.init({});
   }, []);
   return (
-    <div className={styles.CardBox} data-aos="fade-up" data-aos-offset="100">
+    <div className={styles.CardBox} data-aos="fade-up" data-aos-offset="80">
       <CardImage image={data?.image} />
       <CardTitle
         title={data?.title}
