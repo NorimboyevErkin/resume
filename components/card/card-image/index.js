@@ -3,7 +3,7 @@ function CardImage({image}) {
   return (
     <div
       className={styles.CardImageBox}
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${image.src})`}}
     ></div>
   );
 }

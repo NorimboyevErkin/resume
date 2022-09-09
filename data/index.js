@@ -1,36 +1,44 @@
 import {
-  FaTwitter,
-  FaInstagram,
-  FaFacebookF,
   FaLinkedinIn,
   FaGithub,
+  FaTelegram,
+  FaPhoneAlt,
 } from "react-icons/fa";
 import {
   FiCast,
   FiLayers,
   FiUsers,
   FiMonitor,
-  FiChevronUp,
 } from "react-icons/fi";
+
+import { MdEmail } from "react-icons/md";
 
 const SocialShare = [
   {
-    Social: <FaFacebookF />,
-    link: "https://www.facebook.com/...",
-    name: "Facebook",
+    Social: <FaGithub />,
+    link: "https://github.com/NorimboyevErkin",
+    name: "Github",
+  },
+  {
+    Social: <FaTelegram />,
+    link: "https://t.me/Erkin_norimboyev",
+    name: "Telegram",
   },
   {
     Social: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/in/...",
+    link: "#",
     name: "Linkedin",
   },
   {
-    Social: <FaInstagram />,
-    link: "https://www.instagram.com/...",
-    name: "Instagram",
+    Social: <MdEmail />,
+    link: "emailto:enorimboyev@gmail.com",
+    name: "Email",
   },
-  { Social: <FaTwitter />, link: "https://twitter.com/...", name: "Twitter" },
-  { Social: <FaGithub />, link: "#", name: "Github" },
+  {
+    Social: <FaPhoneAlt />,
+    link: "tel:+998949242319",
+    name: "Phone",
+  },
 ];
 
 const ServiceList = [

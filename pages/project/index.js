@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef } from "react";
 import Components from "../../components";
 import { SectionContext } from "../../context";
-import project from "../../data/project.json";
+import {portfolio} from "../../data/project";
 import styles from "../../styles/pages-styles/project-styles/project-styles.module.scss";
 
 function Project({ ...others }) {
@@ -21,7 +21,7 @@ function Project({ ...others }) {
       <div className="container">
         <h2 className="title">My projects</h2>
         <div className={styles.ProjectGrid}>
-          {project.map((item, index) => (
+          {portfolio.map((item, index) => (
             <Components typeComponent="card" data={item} key={index} />
           ))}
         </div>
