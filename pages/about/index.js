@@ -65,6 +65,10 @@ function About({ ...others }) {
               <li>React</li>
               <li>Redux</li>
               <li>Next.js</li>
+              <li>
+                i18next , react-hook-form ,yup , react-query (TanStack-query) ,
+                axios , ...others
+              </li>
               <li>And Design , Material UI</li>
               <li>Git , GitHub , GitLub</li>
             </ol>
