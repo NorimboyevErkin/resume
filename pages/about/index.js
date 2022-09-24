@@ -63,7 +63,7 @@ function About({ ...others }) {
               <li>Bootstrap</li>
               <li>JavaScript</li>
               <li>React</li>
-              <li>Redux</li>
+              <li>Redux , redux-toolkit</li>
               <li>Next.js</li>
               <li>
                 i18next , react-hook-form ,yup , react-query (TanStack-query) ,
