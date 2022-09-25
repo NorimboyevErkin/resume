@@ -62,6 +62,7 @@ function About({ ...others }) {
               <li>Css (Sass , Scss)</li>
               <li>Bootstrap</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>React</li>
               <li>Redux , redux-toolkit</li>
               <li>Next.js</li>
