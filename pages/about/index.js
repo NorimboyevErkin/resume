@@ -43,7 +43,7 @@ function About({ ...others }) {
               Norimboyev Erkin Turg&apos;un og&apos;li Toshkent Viloyati
               Bo&apos;stonliq tumani Gazalkent shaxrida tavalud topgan. Mirzo
               Ulug&apos;bek nomidagi O&apos;zbekiston Milliy Unversiteti ,
-              Axborot Tizimlari va Texnalogiyalari yo&apos;nalishida 2 - kursda
+              Axborot Tizimlari va Texnalogiyalari yo&apos;nalishida 3 - kursda
               taxsil oladi. Hozirda Frontend developer bo&apos;lib faoliyat
               yuritadi.
             </p>
@@ -81,10 +81,7 @@ function About({ ...others }) {
           >
             <h3>My EDUCATION</h3>
             <ol>
-              <li>
-                Gazalkent Xizmat ko&apos;rsatish va Iqtisodiyot kasb-xunar
-                kolleji
-              </li>
+              <li>Frontend Grand kurs Albison IT Academy</li>
               <li>
                 Mirzo Ulug&apos;bek nomidagi O&apos;zbekiston Milliy Unversiteti
               </li>
